@@ -1,0 +1,25 @@
+{
+  "name": "izmir-kesinti-takip",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "expo": "~52.0.0",
+    "expo-status-bar": "~2.0.0",
+    "expo-notifications": "~0.29.13",
+    "expo-device": "~7.0.2",
+    "react": "18.3.1",
+    "react-native": "0.76.7",
+    "lucide-react-native": "^0.475.0",
+    "react-native-svg": "15.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2"
+  },
+  "private": true
+}

@@ -1,0 +1,6 @@
+{
+  "name": "İzmir Kesinti Takip",
+  "description": "İzmir için İZSU su ve Gediz Elektrik kesintilerini anlık takip etme, akıllı bildirimler, ilçe/mahalle filtreleme ve interaktif harita uygulaması",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
