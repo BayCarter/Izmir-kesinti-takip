@@ -1,0 +1,13 @@
+node_modules
+.expo
+dist
+web-build
+.git
+.gradle
+.build-outputs
+app
+build
+android
+ios
+*.keystore
+debug.keystore.base64
