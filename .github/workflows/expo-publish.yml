@@ -17,8 +17,7 @@ jobs:
       - name: Node.js Kur
         uses: actions/setup-node@v4
         with:
-          node-version: 18.x
-          cache: npm
+          node-version: 20
 
       - name: Expo CLI ve EAS Kur
         uses: expo/expo-github-action@v8
@@ -30,4 +29,4 @@ jobs:
         run: npm install
 
       - name: Expo Go Projesini Yayınla
-        run: npx eas update --auto
+        run: npx eas update --branch main --auto
