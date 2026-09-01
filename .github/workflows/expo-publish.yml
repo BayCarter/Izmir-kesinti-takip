@@ -1,0 +1,33 @@
+name: Expo Otomatik Yayınlama
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  publish:
+    name: Expo Projesini Güncelle
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kodu Çek (Checkout)
+        uses: actions/checkout@v4
+
+      - name: Node.js Kur
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18.x
+          cache: npm
+
+      - name: Expo CLI ve EAS Kur
+        uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Bağımlılıkları Yükle
+        run: npm install
+
+      - name: Expo Go Projesini Yayınla
+        run: npx eas update --auto
