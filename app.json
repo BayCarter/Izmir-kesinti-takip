@@ -1,29 +1,19 @@
 {
-  "name": "izmir-kesinti-takip",
-  "slug": "izmir-kesinti-takip",
-  "version": "1.0.0",
-  "orientation": "portrait",
-  "icon": "./assets/icon.png",
-  "userInterfaceStyle": "dark",
-  "newArchEnabled": true,
-  "splash": {
-    "image": "./assets/splash-icon.png",
-    "resizeMode": "contain",
-    "backgroundColor": "#0F172A"
-  },
-  "ios": {
-    "supportsTablet": true,
-    "bundleIdentifier": "com.aistudio.izmirkesintitakip"
-  },
-  "android": {
-    "adaptiveIcon": {
-      "foregroundImage": "./assets/adaptive-icon.png",
-      "backgroundColor": "#0F172A"
+  "expo": {
+    "name": "İzmir Kesinti Takip",
+    "slug": "izmir-kesinti-takip",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aistudio.izmirkesintitakip"
     },
-    "package": "com.aistudio.izmirkesintitakip"
-  },
-  "web": {
-    "favicon": "./assets/favicon.png",
-    "bundler": "metro"
+    "android": {
+      "package": "com.aistudio.izmirkesintitakip"
+    },
+    "web": {
+      "bundler": "metro"
+    }
   }
 }
